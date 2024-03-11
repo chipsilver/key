@@ -1,0 +1,7 @@
+.body-header card box {
+    position: relative;
+}
+
+.body-header card box > cell {
+    flex-direction: row;
+}
