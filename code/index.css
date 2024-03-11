@@ -14,13 +14,22 @@
 
 @media {
     cell {
-        display: flex;]
+        display: flex;
     }
 
     ico {
         display: inline-flex;
         height: 50px;
-        width: 20px;
+        justify-content: center;
+        width: 50px;
+    }
+
+    ico {
+        align-items: center;
+        display: inline-flex;
+        height: 50px;
+        justify-content: center;
+        width: 30px;
     }
 
     ico n {
@@ -39,10 +48,20 @@
         top: 0;
         width: 100%;
     }
+    
+    body .body-header > wrap {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
 
     body .body-header card {
         display: inline-flex;
         line-height: 50px;
         position: relative;
+    }
+
+    body .body-header card:first-child {
+        /* margin: 0 10px; */
     }
 }

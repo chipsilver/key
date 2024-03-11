@@ -5,3 +5,7 @@
 .body-header card box > cell {
     flex-direction: row;
 }
+
+.body-header card:first-child box {
+    margin: 50px;
+}
