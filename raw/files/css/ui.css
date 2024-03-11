@@ -1,5 +1,16 @@
 .body-header card box {
+    display: flex;
     position: relative;
+    white-space: nowrap;
+}
+
+.body-header card box avi {
+    background: #333;
+    border-radius: 50%;
+    display: flex;
+    height: 30px;
+    margin: 10px;
+    width: 30px;
 }
 
 .body-header card box > cell {
@@ -7,5 +18,10 @@
 }
 
 .body-header card:first-child box {
-    margin: 50px;
+    margin: 0;
+}
+
+.body-header card:first-child box ico {
+    margin: 0;
+    width: 30px;
 }
