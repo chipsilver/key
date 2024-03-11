@@ -1,0 +1,45 @@
+.page-home {
+    width: 100%;
+}
+
+.page-home .card-user {
+    width: 100%;
+}
+
+.page-home .body-header .card-user .box-avatar picture:empty {
+    display: none;
+}
+
+.page-home > blocks .block-keycode {
+    padding: 70px 0 10px;
+}
+
+.page-home .block-keycode {
+    margin: auto;
+    max-width: 100%;
+    text-align: center;
+    max-width: 640px;
+}
+
+.page-home .block-keycode .qrcode {
+    background: white;
+    border: 20px solid;
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: block;
+    height: 240px;
+    margin: 20px auto;
+    position: relative;
+    max-width: 100%;
+    transform: rotate(45deg) scale(.7);
+    width: 240px;
+}
+
+.page-home .block-keycode .qrcode img {
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}

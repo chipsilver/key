@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <title>Code [ Key ] Jyxer | ProJyx</title>
+        <meta name='viewport' content='width=device-width,initial-scale=1.0,maximum-scale=1.0'>
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+        <meta name='apple-mobile-web-app-capable' content='yes'>
+        <meta name='apple-mobile-web-app-status-bar-style'>
+        <meta name="apple-mobile-web-app-title">
+        <meta name="application-name">
+        <meta name="application-shortname">
+        <meta name="msapplication-TileColor">
+        <meta name='theme-color'>
+        <link href="index.css" rel="stylesheet">
+        <link href="https://endk.it/raw/asset/css/framework.css" rel="stylesheet">
+        <link href="https://endk.it/raw/asset/css/ui.css" rel="stylesheet"/>
+        <link href="https://endk.it/raw/asset/css/cc.css" rel="stylesheet"/>
+        <link href="raw/asset/css/home.css" rel="stylesheet">
+        <script src="https://endk.it/raw/asset/js/firebase.app.js"></script>
+        <script src="https://endk.it/raw/asset/js/firebase.auth.js"></script>
+        <script src="https://endk.it/raw/asset/js/github.js"></script>
+        <script src="https://endk.it/raw/asset/js/ochopussy.js"></script>
+        <script src="https://endk.it/raw/asset/js/router.js"></script>
+        <script src="index.js"></script>
+        <script src="raw/asset/js/events.js"></script>
+        <script src="raw/asset/js/routes.js"></script>
+        <script>
+            var domains = {
+                "jyxer.com": "/key/code",
+                "jyxer.tld": "/key/code",
+                "jyxer.pages.dev": "/notes",
+                "projyx.github.io": "/jyxer/key/code",
+                "projyx.github.tld": "/jyxer/key/code"
+            };
+            var base = document.createElement('base');
+            var template = document.head.querySelector('template');
+            var host = window.location.host;
+            var origin = window.location.origin;
+            base.href = origin + domains[host] + "/";
+            document.head.querySelector('script').insertAdjacentHTML("afterend", base.outerHTML);
+            base = document.head.querySelector('script').nextElementSibling;
+            //console.log(base, template);
+            //base.insertAdjacentHTML("afterend", template.content.firstElementChild.innerHTML);
+        </script>
+        <script src="raw/asset/js/qrcode.min.js"></script>
+    </head>
+    <body>
+        <header class="body-header">
+            <row>
+                <card class="card-user">
+                    <row>
+                        <box>
+                            <row>
+                                <i>
+                                    <con class="gg-time"></con>
+                                </i>
+                                <text>KeyCode</text>
+                            </row>
+                        </box>
+                    </row>
+                </card>
+                <card class="card-system">
+                    <row>
+                        <box>
+                            <flex>
+                                <i>
+                                    <con class="gg-time"></con>
+                                </i>
+                            </flex>
+                        </box>
+                        <box>
+                            <flex>
+                                <i>
+                                    <con class="gg-database"></con>
+                                </i>
+                            </flex>
+                        </box>
+                        <box>
+                            <flex>
+                                <i>
+                                    <con class="gg-options"></con>
+                                </i>
+                            </flex>
+                        </box>
+                        <box class="box-avatar" id="avatar" onclick="github.oauth.login()">
+                            <flex>
+                                <picture></picture>
+                                <picture>
+                                    <img src="/raw/asset/svg/github.svg">
+                                </picture>
+                            </flex>
+                        </box>
+                    </row>
+                </card>
+            </row>
+        </header>
+        <main>
+            <page class="page-home active" route="/">
+                <blocks>
+                    <block class="block-keycode">
+                        <section>
+                            <card>
+                                <header>
+                                    <box>
+                                        <section>
+                                            <text>My KeyCode</text>
+                                        </section>
+                                    </box>
+                                </header>
+                                <section>
+                                    <box>
+                                        <section>
+                                            <text>
+                                                By sharing your KeyCode, you agree to the <br>
+                                                <u>conditions of use</u>
+                                                and <u>privacy notice</u>
+                                            </text>
+                                        </section>
+                                    </box>
+                                </section>
+                            </card>
+                            <card>
+                                <section>
+                                    <box>
+                                        <picture class="qrcode" id="qrcode"></picture>
+                                    </box>
+                                </section>
+                            </card>
+                            <card>
+                                <section>
+                                    <box>
+                                        <section>
+                                            <text>Scan to pay, request and more with family, friends and others. Collect, share and trade codes with other KeyCoders.</text>
+                                        </section>
+                                    </box>
+                                </section>
+                                <footer>
+                                    <box>
+                                        <section>
+                                            <text>OK, got it!</text>
+                                        </section>
+                                    </box>
+                                </footer>
+                            </card>
+                        </section>
+                    </block>
+                </blocks>
+            </page>
+        </main>
+    </body>
+</html>
